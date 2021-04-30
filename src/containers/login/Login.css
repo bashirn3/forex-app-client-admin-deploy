@@ -1,0 +1,104 @@
+.box{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6F7F8; 
+    align-items: center;
+}
+
+.container {
+    height: 20rem;
+    text-align: left;
+    display:flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #d8dbe0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.login-container{
+    padding: 1.25rem 0;
+    width: 50% ;
+}
+
+.card{
+    width: 80%;
+    margin: auto;
+}
+
+.signup-container{
+    color: #ffffff;
+    background-color: #880000;
+    height: 20rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.front_logo {
+    width: 200px;
+    height: 200px;
+}
+
+.login-header {
+    color: #3C4B64;
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+}
+
+.login-header + p {
+   color: #768192;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    margin-top: 0.8rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 0.35rem 1.5rem;
+    margin: 0.3rem 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-login {
+border-radius: 0.25rem;
+background-color: #880000;
+color: #fff;
+}
+
+
+.button-login:active{
+background-color: #b4a4a9;
+    
+}
+
+.button-login:disabled {
+    background-color: #b4a4a9;
+}
+
+.button-password {
+  background: transparent;
+  color:  #880000;
+}
+
+.forgot-password-link {
+    display: inline-block;
+    text-align: right;
+}
+
+.login-error {
+    color:  #ff0000e0;
+}

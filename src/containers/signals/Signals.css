@@ -1,0 +1,96 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: #ddd;}
+
+  .thead-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: transparent;
+    height: 50px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 30px;
+    margin: 5px 8px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+
+  .enable.btn:disabled {
+    cursor: not-allowed;
+    background-color: #00800094;
+  }
+
+  .disable.btn:disabled {
+    cursor: not-allowed;
+    background-color: #ff000080;
+  }
+
+  .btn:active{
+    background-color: #b47575;
+  }
+
+  .enable {
+    background-color: green;
+    color: white;
+  }
+
+  .disable {
+    background-color: red;
+    color: white;
+  }
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #880000;
+    color: #fff;
+  }
+
+  .table-link {
+    padding: 0;
+    margin: 0;
+  }
+
+  .table-header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 0.7rem;
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-label {
+    font-size: 0.7rem;
+    margin-right: 5px;
+  }
+
+  .search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .button-login:active{
+    background-color: #b4a4a9;
+        
+    }

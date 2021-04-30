@@ -1,0 +1,105 @@
+.main-layout{
+    width: 100vw;
+    background-color: #f6f7f8;
+}
+
+.top-nav,
+.side-nav {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 11;
+}
+
+.logo-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    border-radius: 50%;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-title {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-right: 20%;
+    margin-top: 10%;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 200px;
+    height: 100vh;
+    z-index: 10;
+}
+
+.dashboard-title {
+    color: #880000;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.side-nav__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 4rem;
+    margin-left: 0.3rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.side-nav__item {
+    margin: 0.7rem;
+    margin-right: 0;
+    font-size: smaller;
+}
+
+.side-nav__item .nav_link {
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.side-nav__item a:hover,
+.side-nav__item a:active {
+    color: #880000;
+}
+
+.layout-body {
+    width: calc(100% - 200px);
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 1rem;
+    background-color: #f6f7f8;
+}

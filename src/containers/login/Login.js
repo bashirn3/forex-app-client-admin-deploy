@@ -20,12 +20,11 @@ function Login() {
 
     function loginHandler() {
 
-        console.log(inputValues);
             setLoading(true);
             localStorage.removeItem('operator');
             axios.post(`${BASE_URL}/login`, inputValues)
                 .then((resp) => {
-                    console.log(resp.data);
+                    // console.log(resp.data);
                     const {
                         acessToken: accessToken,
                         refreshToken: refreshToken
@@ -40,7 +39,7 @@ function Login() {
                     window.location.reload();
                 })
                 .catch((err) => {
-                    console.log(err)
+                    // console.log(err)
                     setLoading(false);
                     setLoginError(true);
                 })

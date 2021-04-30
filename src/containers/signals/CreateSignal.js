@@ -35,7 +35,7 @@ function CreateSignal({ id }) {
                     onChangeHandler(null, initialvalues);
                 })
                 .catch((err) => {
-                    console.log(err)
+                    // console.log(err)
                 })
         }
 
@@ -62,12 +62,11 @@ function CreateSignal({ id }) {
                         message: "Error editing signal.",
                         type: "danger"
                     })
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false)
                 })
-            console.log(inputValues);
 
         } else {
             setLoading(true);
@@ -88,7 +87,7 @@ function CreateSignal({ id }) {
                         message: "Error creating signal.",
                         type: "danger"
                     })
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false);

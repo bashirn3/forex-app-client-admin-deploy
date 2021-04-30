@@ -17,7 +17,7 @@ function Users() {
                 setUsers(data.results);
             })
             .catch((err) => {
-                console.log(err)
+                // console.log(err)
             })
             .finally(() => {
                 setLoading(false);

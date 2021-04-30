@@ -94,10 +94,10 @@ function SignalDeleteConfirmation({ closeModal, id }) {
         axios.delete(`${BASE_URL}/signals/${id}`)
             .then((resp) => {
                 const { data } = resp;
-                console.log(data);
+                // console.log(data);
             })
             .catch((err) => {
-                console.log(err)
+                // console.log(err)
             })
             .finally(() => {
                 setLoading(false)

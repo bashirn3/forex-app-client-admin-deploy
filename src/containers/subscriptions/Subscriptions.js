@@ -15,7 +15,7 @@ function Subscriptions() {
                 setSubscriptions(data.results);
             })
             .catch((err) => {
-                console.log(err)
+                // console.log(err)
             })
             .finally(() => {
                 setLoading(false)

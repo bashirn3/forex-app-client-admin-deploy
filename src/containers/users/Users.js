@@ -56,7 +56,7 @@ function Users() {
                                     <td>{user?.user_profiles?.last_name}</td>
                                     <td>{user?.email}</td>
                                     <td>{user?.username}</td>
-                                    <rd>{user?.user_profiles?.role}</rd>
+                                    <td>{user?.user_profiles?.role}</td>
                                     <td>{user?.user_profiles?.paid === true ? 'Paid' : 'Not Paid'}</td>
                                     <td>{user?.user_profiles?.signal_paid === true ? 'Paid' : 'Not Paid'}</td>
                                 </tr>

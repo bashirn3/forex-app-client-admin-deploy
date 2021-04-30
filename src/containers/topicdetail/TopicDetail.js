@@ -25,7 +25,7 @@ function TopicDetail() {
                 setTopic(data.results);
             })
             .catch((err) => {
-                console.log(err)
+                // console.log(err)
             })
             .finally(() => {
                 setLoading(false)
@@ -82,12 +82,12 @@ function DeleteConfirmation({ classid, topicId, closeModal }) {
         setLoading(true);
         axios.delete(`${BASE_URL}/classes/${classid}/topics/${topicId}`)
             .then(({ data }) => {
-                console.log(data);
+                // console.log(data);
                 history.push(`/app/topics/${classid}`)
 
             })
             .catch((err) => {
-                console.log(err);
+                // console.log(err);
             })
             .finally(() =>
                 setLoading(false));

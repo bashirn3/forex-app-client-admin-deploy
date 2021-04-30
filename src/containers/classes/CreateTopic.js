@@ -32,7 +32,7 @@ function CreateTopic({ classid, topicId }) {
                     onChangeHandler(null, initialvalues);
                 })
                 .catch((err) => {
-                    console.log(err)
+                    // console.log(err)
                 })
         }
 
@@ -51,7 +51,7 @@ function CreateTopic({ classid, topicId }) {
                         message: "Class topic edited successfully.",
                         type: "success"
                     })
-                    console.log(data);
+                    // console.log(data);
                 })
                 .catch((err) => {
                     store.addNotification({
@@ -60,7 +60,7 @@ function CreateTopic({ classid, topicId }) {
                         message: "Error editing class topic.",
                         type: "danger"
                     })
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false)
@@ -75,7 +75,7 @@ function CreateTopic({ classid, topicId }) {
                         message: "Class topic created successfully.",
                         type: "success"
                     })
-                    console.log(data)
+                    // console.log(data)
                 })
                 .catch((err) => {
                     store.addNotification({
@@ -84,7 +84,7 @@ function CreateTopic({ classid, topicId }) {
                         message: "Error editing class topic.",
                         type: "danger"
                     })
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false);

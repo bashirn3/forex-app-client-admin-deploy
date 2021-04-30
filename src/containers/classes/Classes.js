@@ -24,7 +24,7 @@ function Classes() {
 
             })
             .catch((err) => {
-                console.log(err);
+                // console.log(err);
             })
             .finally(() => {
                 setLoading(false);
@@ -92,12 +92,12 @@ function ClassDeleteConfirmation({ classid, closeModal }) {
         setLoading(true);
         axios.delete(`${BASE_URL}/classes/${classid}`)
             .then(({ data }) => {
-                console.log(data);
+                // console.log(data);
                 history.push('/app/classes')
 
             })
-            .catch((err) => {
-                console.log(err);
+            .catch(() => {
+                // console.log(err);
             })
             .finally(() =>
                 setLoading(false));

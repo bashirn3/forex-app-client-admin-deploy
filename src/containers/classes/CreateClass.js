@@ -31,7 +31,7 @@ function CreateClass({ editId }) {
                     onChangeHandler(null, initialvalues);
                 })
                 .catch((err) => {
-                    console.log(err)
+                    // console.log(err)
                 })
         }
 
@@ -51,7 +51,7 @@ function CreateClass({ editId }) {
                         message: "Class edited successfully.",
                         type: "success"
                     })
-                    console.log(data);
+                    // console.log(data);
                 })
                 .catch((err) => {
                     store.addNotification({
@@ -60,22 +60,21 @@ function CreateClass({ editId }) {
                         message: "Error creating class.",
                         type: "danger"
                     })
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false)
                 })
-            console.log(inputValues);
 
         } else {
 
             setLoading(true);
             axios.post(`${BASE_URL}/classes`, inputValues)
                 .then((resp) => {
-                    console.log(resp.data)
+                    // console.log(resp.data)
                 })
                 .catch((err) => {
-                    console.log(err)
+                    // console.log(err)
                 })
                 .finally(() => {
                     setLoading(false);

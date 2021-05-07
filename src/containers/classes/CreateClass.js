@@ -35,7 +35,7 @@ function CreateClass({ editId }) {
                 })
         }
 
-    }, [editId, onChangeHandler])
+    }, [editId])
 
     function submitHandler() {
 

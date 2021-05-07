@@ -39,7 +39,7 @@ function CreateSignal({ id }) {
                 })
         }
 
-    }, [onChangeHandler, id])
+    }, [id])
 
     function submitHandler() {
         if (pageMode === 'edit') {

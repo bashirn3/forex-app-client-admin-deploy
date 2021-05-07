@@ -36,7 +36,7 @@ function CreateTopic({ classid, topicId }) {
                 })
         }
 
-    }, [classid, onChangeHandler, topicId])
+    }, [classid, topicId])
 
     function submitHandler() {
         if (pageMode === 'edit') {

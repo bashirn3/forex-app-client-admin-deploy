@@ -57,7 +57,7 @@ function CreateClass({ editId }) {
                     store.addNotification({
                         ...notification,
                         title: "Error",
-                        message: "Error creating class.",
+                        message: "Error editing class.",
                         type: "danger"
                     })
                     // console.log(err)
@@ -72,9 +72,22 @@ function CreateClass({ editId }) {
             axios.post(`${BASE_URL}/classes`, inputValues)
                 .then((resp) => {
                     // console.log(resp.data)
+                    store.addNotification({
+                        ...notification,
+                        title: "Success",
+                        message: "Class created successfully.",
+                        type: "success"
+                    })
+
                 })
                 .catch((err) => {
                     // console.log(err)
+                    store.addNotification({
+                        ...notification,
+                        title: "Error",
+                        message: "Error creating class.",
+                        type: "danger"
+                    })
                 })
                 .finally(() => {
                     setLoading(false);

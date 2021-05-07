@@ -6,6 +6,8 @@ import './Signals.css';
 import Modal from '../../components/Modal/Modal';
 import CreateSignal from './CreateSignal';
 import Loader from 'react-loader-spinner';
+import { store } from 'react-notifications-component';
+import { notification } from '../../utils/notifications';
 
 function Signals() {
     const [editId, setEditId] = useState('');

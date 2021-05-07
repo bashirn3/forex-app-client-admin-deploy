@@ -6,6 +6,8 @@ import './TopicDetail.css';
 import CreateTopic from '../classes/CreateTopic';
 import Modal from '../../components/Modal/Modal';
 import Loader from 'react-loader-spinner';
+import { store } from 'react-notifications-component';
+import { notification } from '../../utils/notifications';
 
 
 function TopicDetail() {

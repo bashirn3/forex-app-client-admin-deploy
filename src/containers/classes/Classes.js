@@ -5,6 +5,8 @@ import { useHistory } from 'react-router-dom';
 import CreateClass from './CreateClass';
 import Modal from '../../components/Modal/Modal';
 import Loader from 'react-loader-spinner';
+import { store } from 'react-notifications-component';
+import { notification } from '../../utils/notifications';
 
 
 function Classes() {

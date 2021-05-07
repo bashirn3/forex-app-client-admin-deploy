@@ -6,6 +6,8 @@ import './Signals.css';
 import Modal from '../../components/Modal/Modal';
 import CreateSignal from './CreateSignal';
 import Loader from 'react-loader-spinner';
+import { store } from 'react-notifications-component';
+import { notification } from '../../utils/notifications';
 
 function Signals() {
     const [editId, setEditId] = useState('');
@@ -95,9 +97,21 @@ function SignalDeleteConfirmation({ closeModal, id }) {
             .then((resp) => {
                 const { data } = resp;
                 // console.log(data);
+                store.addNotification({
+                    ...notification,
+                    title: "Success",
+                    message: "Signal deleted successfully.",
+                    type: "success"
+                })
             })
             .catch((err) => {
                 // console.log(err)
+                store.addNotification({
+                    ...notification,
+                    title: "Error",
+                    message: "Error deleting signal.",
+                    type: "danger"
+                })
             })
             .finally(() => {
                 setLoading(false)

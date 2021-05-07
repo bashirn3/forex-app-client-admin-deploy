@@ -5,6 +5,8 @@ import { useHistory } from 'react-router-dom';
 import CreateClass from './CreateClass';
 import Modal from '../../components/Modal/Modal';
 import Loader from 'react-loader-spinner';
+import { store } from 'react-notifications-component';
+import { notification } from '../../utils/notifications';
 
 
 function Classes() {
@@ -93,11 +95,25 @@ function ClassDeleteConfirmation({ classid, closeModal }) {
         axios.delete(`${BASE_URL}/classes/${classid}`)
             .then(({ data }) => {
                 // console.log(data);
-                history.push('/app/classes')
+                history.push('/app/classes');
+                store.addNotification({
+                    ...notification,
+                    title: "Success",
+                    message: "Class deleted successfully.",
+                    type: "success"
+                })
+
 
             })
             .catch(() => {
                 // console.log(err);
+                store.addNotification({
+                    ...notification,
+                    title: "Error",
+                    message: "Error deleting class.",
+                    type: "danger"
+                })
+
             })
             .finally(() =>
                 setLoading(false));

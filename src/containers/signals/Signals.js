@@ -95,9 +95,21 @@ function SignalDeleteConfirmation({ closeModal, id }) {
             .then((resp) => {
                 const { data } = resp;
                 // console.log(data);
+                store.addNotification({
+                    ...notification,
+                    title: "Success",
+                    message: "Signal deleted successfully.",
+                    type: "success"
+                })
             })
             .catch((err) => {
                 // console.log(err)
+                store.addNotification({
+                    ...notification,
+                    title: "Error",
+                    message: "Error deleting signal.",
+                    type: "danger"
+                })
             })
             .finally(() => {
                 setLoading(false)

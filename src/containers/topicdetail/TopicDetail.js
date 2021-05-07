@@ -84,10 +84,22 @@ function DeleteConfirmation({ classid, topicId, closeModal }) {
             .then(({ data }) => {
                 // console.log(data);
                 history.push(`/app/topics/${classid}`)
+                store.addNotification({
+                    ...notification,
+                    title: "Success",
+                    message: "Topic deleted successfully.",
+                    type: "success"
+                })
 
             })
             .catch((err) => {
                 // console.log(err);
+                store.addNotification({
+                    ...notification,
+                    title: "Error",
+                    message: "Error deleting topic.",
+                    type: "danger"
+                })
             })
             .finally(() =>
                 setLoading(false));

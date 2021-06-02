@@ -20,6 +20,10 @@
     border-radius: 2px;
 }
 
+@media screen and (max-width: 768px) {
+    .container { width:100%; }
+}
+
 .login-container{
     padding: 1.25rem 0;
     width: 50% ;
